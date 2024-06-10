@@ -8,12 +8,9 @@ dp = Dispatcher()
 
 
 @dp.message()
-async def yoyo(message:types.Message):
+async def yoyo(message: types.Message):
     await message.answer(text='привет')
+
 
 if __name__ == '__main__':
     asyncio.run(dp.start_polling(bot))
-
-
-
-
